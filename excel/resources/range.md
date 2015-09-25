@@ -11,14 +11,14 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 |cellCount|int|Number of cells in the range. Read-only.|
 |columnCount|int|Represents the total number of columns in the range. Read-only.|
 |columnIndex|int|Represents the column number of the first cell in the range. Zero-indexed. Read-only.|
-|columnWidth|number|Returns or sets the width of all columns in the specified range, measured in points. |
+|**columnWidth**|number|Returns or sets the width of all columns in the specified range, measured in points. |
 |formulas|object[][]|Represents the formula in A1-style notation.|
 |formulasLocal|object[][]|Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.|
-|formulasR1C1|string|Returns or sets the formula for the object, using R1C1-style notation.|
+|**formulasR1C1**|string|Returns or sets the formula for the object, using R1C1-style notation.|
 |numberFormat|object[][]|Represents Excel's number format code for the given cell.|
-|orientation|number|Returns or sets a integer value that represents the text orientation, from -90 to 90 degrees. |
+|**orientation**|number|Returns or sets a integer value that represents the text orientation, from -90 to 90 degrees. |
 |rowCount|int|Returns the total number of rows in the range. Read-only.|
-|rowHeight|number|Returns or sets the height of the first row in the range specified, measured in points.|
+|**rowHeight**|number|Returns or sets the height of the first row in the range specified, measured in points.|
 |rowIndex|int|Returns the row number of the first cell in the range. Zero-indexed. Read-only.|
 |text|object[][]|Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.|
 |valueTypes|string|Represents the type of data of each cell. Read-only. Possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error.|
@@ -36,8 +36,8 @@ _See property access [examples.](#property-access-examples)_
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[autoFitColumn()](#autofitcolumn)|[Range](range.md)|Changes the width of the columns in the range to achieve the best fit.|
-|[autoFitRow()](#autofitrow)|[Range](range.md)|Changes the height of the rows in the range to achieve the best fit.|
+|**[autoFitColumn()](#autofitcolumn)**|[Range](range.md)|**Changes the width of the columns in the range to achieve the best fit.**|
+|**[autoFitRow()](#autofitrow)**|[Range](range.md)|**Changes the height of the rows in the range to achieve the best fit.**|
 |[clear(applyTo: string)](#clearapplyto-string)|void|Clear range values, format, fill, border, etc.|
 |[delete(shift: string)](#deleteshift-string)|void|Deletes the cells associated with the range.|
 |[getBoundingRect(anotherRange: Range or string)](#getboundingrectanotherrange-range-or-string)|[Range](range.md)|Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".|
@@ -51,12 +51,12 @@ _See property access [examples.](#property-access-examples)_
 |[getLastRow()](#getlastrow)|[Range](range.md)|Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".|
 |[getOffsetRange(rowOffset: number, columnOffset: number)](#getoffsetrangerowoffset-number-columnoffset-number)|[Range](range.md)|Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.|
 |[getRow(row: number)](#getrowrow-number)|[Range](range.md)|Gets a row contained in the range.|
-|[getUsedRange(valuesOnly?:boolean)](#getusedrangevaluesonlyboolean)|[Range](range.md)|Returns the used range of the given range object.|
+|**[getUsedRange(valuesOnly?:boolean)](#getusedrangevaluesonlyboolean)**|[Range](range.md)|**Returns the used range of the given range object.**|
 |[insert(shift: string)](#insertshift-string)|[Range](range.md)|Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.|
 |[load(param: object)](#loadparam-object)|void|Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.|
-|[merge(across: boolean)](#mergeacross-boolean)|[Range](range.md)|Creates a merged cell from the specified Range object.|
+|**[merge(across?: boolean)](#mergeacross-boolean)**|[Range](range.md)|**Creates a merged cell from the specified Range object.**|
 |[select()](#select)|void|Selects the specified range in the Excel UI.|
-|[unmerge()](#unmerge)|[Range](range.md)|Separates a merged area into individual cells. If the range contains no merged cell, this API will do no operations on the Range.|
+|**[unmerge()](#unmerge)**|[Range](range.md)|**Separates a merged area into individual cells. If the range contains no merged cell, this API will do no operations on the Range.**|
 
 ## Method Details
 
