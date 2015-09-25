@@ -29,7 +29,7 @@ _See property access [examples.](#property-access-examples)_
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[delete()](#delete)|void|Deletes the chart object.|
-|[getImage(width?: number, height?: number)](#getimagewidth-number-height-number)|string|Return a chart as a base64 string.|
+|**[getImage(width?: number, height?: number)](#getimagewidth-number-height-number)**|string|**Return a chart as a base64 string.**|
 |[load(param: object)](#loadparam-object)|void|Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.|
 |[setData(sourceData: Range or string, seriesBy: string)](#setdatasourcedata-range-or-string-seriesby-string)|void|Resets the source data for the chart.|
 |[setPosition(startCell: Range or string, endCell: Range or string)](#setpositionstartcell-range-or-string-endcell-range-or-string)|void|Positions the chart relative to cells on the worksheet.|
