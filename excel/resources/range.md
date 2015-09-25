@@ -574,7 +574,7 @@ void
 ```js
 
 ```
-### merge(across: boolean)
+### merge(across?: boolean)
 Creates a merged cell from the specified Range object.
 
 #### Syntax
